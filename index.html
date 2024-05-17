@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Force field 2</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+    <div>
+      <label for="slowSpeed"> no of particles</label>
+      <input id="particlesNo" placeholder="no of Particles" value="100" type="number"/>
+      <button onclick="start()">start</button>
+    </div>
+    <div>
+      <b>force + </b>
+      <input type="range" max="100" min="0" id="pForceValue" value="3" />
+      <b>force - </b>
+      <input type="range" max="100" min="0" id="nForceValue" value="3" />
+      <b>negative force distance - </b>
+      <input type="range" max="1000" min="0" id="nForceDistance" value="20" />
+    </div>
+    <div>
+      <b>radius</b>
+      <input type="number" value="0.5" id="particleRadius">
+      <b> show path</b> <input type="checkbox" checked id="showPath">
+    </div>
+    <div>
+      <b> show random color</b> <input type="checkbox" checked id="showRandomColor">
+      <input type="color" value="#ff0000" id="particleColor">
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
