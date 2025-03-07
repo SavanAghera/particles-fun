@@ -2,8 +2,8 @@ const ctx = document.getElementById("canvas").getContext("2d");
 const canvas = document.getElementById("lifeBoard");
 let radius = 0.5;
 
-const canvasSize = 2160;
-const canvasWidth = 3840;
+const canvasSize = 1018;
+const canvasWidth = 1920;
 let noOfParticles = 1;
 let startTime = 0;
 let animationFrame;
@@ -46,7 +46,7 @@ function getDistance(p1, p2) {
 function update(time) {
     if (!showPath.checked) {
         ctx.fillStyle = "black";
-        ctx.fillRect(0, 0, canvasSize, canvasWidth);
+        ctx.fillRect(0, 0, canvasWidth, canvasSize);
     }
     // ctx.scale(scale, scale)
     const pForce = parseInt(pForceValue.value) || 0;
@@ -80,7 +80,7 @@ function start() {
     }
     if (showPath.checked) {
         ctx.fillStyle = "black";
-        ctx.fillRect(0, 0, canvasSize, canvasSize);
+        ctx.fillRect(0, 0, canvasWidth, canvasSize);
     }
 
     radius = parseFloat(particleRadius.value);
