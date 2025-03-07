@@ -46,7 +46,7 @@ function getDistance(p1, p2) {
 function update(time) {
     if (!showPath.checked) {
         ctx.fillStyle = "black";
-        ctx.fillRect(0, 0, canvasWidth, canvasSize);
+        ctx.fillRect(0, 0, canvasSize, canvasWidth);
     }
     // ctx.scale(scale, scale)
     const pForce = parseInt(pForceValue.value) || 0;
