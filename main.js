@@ -26,8 +26,8 @@ function createParticles() {
 }
 function getParticleWithPosition() {
     return {
-        x: getRandom(),
-        y: getRandom(),
+        x: getRandom(canvasWidth),
+        y: getRandom(canvasSize),
         vx: 0,
         vy: 0,
         color: showRandomColor.checked ? getRandomColor() : particleColor.value
@@ -35,8 +35,8 @@ function getParticleWithPosition() {
 
 }
 
-function getRandom() {
-    return Math.round(Math.random() * canvasSize);
+function getRandom(value) {
+    return Math.round(Math.random() * value);
 }
 
 function getDistance(p1, p2) {
