@@ -2,7 +2,7 @@ const ctx = document.getElementById("canvas").getContext("2d");
 const canvas = document.getElementById("lifeBoard");
 let radius = 0.5;
 
-const canvasSize = 1000;
+const canvasSize = 2160;
 let noOfParticles = 1;
 let startTime = 0;
 let animationFrame;
